@@ -1,0 +1,59 @@
+# Static customer record for in memory storage
+data:
+  transactionDetail: '{"customerTransactions":[{
+ "customerId": "1001",
+ "customerName": "John",
+ "transactions": [{
+                    "month": "one",
+                    "transactionAmount": "110"
+                  },
+                  {
+                    "month": "one",
+                    "transactionAmount": "40"
+                  },
+                  {
+                    "month": "two",
+                    "transactionAmount": "10"
+                  },
+                  {
+                    "month": "three",
+                    "transactionAmount": "90"
+                  },
+                  {
+                    "month": "three",
+                    "transactionAmount": "50"
+                  }
+ ]
+}, {
+  "customerId": "1002",
+  "customerName": "David",
+  "transactions": [{
+                     "month": "one",
+                     "transactionAmount": "190"
+                   },
+                   {
+                     "month": "one",
+                     "transactionAmount": "40"
+                   },
+                   {
+                     "month": "two",
+                     "transactionAmount": "130"
+                   }
+  ]
+}, {
+  "customerId": "1003",
+  "customerName": "Ramesh",
+  "transactions": [{
+                     "month": "one",
+                     "transactionAmount": "120"
+                   },
+                   {
+                     "month": "two",
+                     "transactionAmount": "110"
+                   },
+                   {
+                     "month": "three",
+                     "transactionAmount": "60"
+                   }
+  ]
+}]}'

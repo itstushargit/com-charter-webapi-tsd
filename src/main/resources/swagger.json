@@ -1,0 +1,54 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "com-charter-webapi-tsd",
+    "version": "1.0.0"
+  },
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "rewards/{customerId}/availablePoints": {
+      "parameters": [
+        {
+          "name": "customerId",
+          "required": true,
+          "in": "path",
+          "type": "string",
+          "description": "The unique ID of the customer.\n"
+        }
+      ],
+      "get": {
+        "operationId": "listAgents",
+        "summary": "Customer rewards",
+        "description": "Lists all available points of customer.\n",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response!",
+            "examples": {
+              "application/json": "{\"customerId\":\"1001\",\"customerName\":\"John\",\"totalPoints\":\"110\",\"monthlyPoints\":{\"one\":70,\"two\":0,\"three\":40},\"errors\":null}"
+            }
+          },
+          "400": {
+            "description": "400 Bad Request!",
+            "examples": {
+              "application/json": "{\"customerId\":null,\"customerName\":null,\"totalPoints\":null,\"monthlyPoints\":null,\"errors\":{\"statusCode\":400,\"message\":\"Customer not found!!\"}}"
+            }
+          },
+          "500": {
+            "description": "500 Something went wrong!",
+            "examples": {
+              "application/json": "{\"customerId\":null,\"customerName\":null,\"totalPoints\":null,\"monthlyPoints\":null,\"errors\":{\"statusCode\":500,\"message\":\"Something went wrong. Please try again!!\"}}"
+            }
+          }
+        }
+      }
+    }
+  }
+}
