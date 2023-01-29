@@ -30,22 +30,22 @@ public class RewardsUtil {
         Map<String, Integer> pointMap = new ConcurrentHashMap<>();
         MonthlyPoints monthlyPoints = new MonthlyPoints();
         allTransactions.stream().forEach(i -> {
-            if(i.getMonth().equalsIgnoreCase("one"))
-                pointMap.put("one", (pointMap.get("one") != null ? pointMap.get("one") : 0 ) + calculatePoints(Integer.parseInt(i.getTransactionAmount())));
-            else if(i.getMonth().equalsIgnoreCase("two"))
-                pointMap.put("two", (pointMap.get("two") != null ? pointMap.get("two") : 0 ) + calculatePoints(Integer.parseInt(i.getTransactionAmount())));
+            if(i.getMonth().equalsIgnoreCase("monthOne"))
+                pointMap.put("monthOne", (pointMap.get("monthOne") != null ? pointMap.get("monthOne") : 0 ) + calculatePoints(Integer.parseInt(i.getTransactionAmount())));
+            else if(i.getMonth().equalsIgnoreCase("monthTwo"))
+                pointMap.put("monthTwo", (pointMap.get("monthTwo") != null ? pointMap.get("monthTwo") : 0 ) + calculatePoints(Integer.parseInt(i.getTransactionAmount())));
             else
-                pointMap.put("three", (pointMap.get("three") != null ? pointMap.get("three") : 0 ) + calculatePoints(Integer.parseInt(i.getTransactionAmount())));
+                pointMap.put("monthThree", (pointMap.get("monthThree") != null ? pointMap.get("monthThree") : 0 ) + calculatePoints(Integer.parseInt(i.getTransactionAmount())));
         });
 
-        monthlyPoints.setOne(pointMap.get("one") != null ? pointMap.get("one") : 0 );
-        monthlyPoints.setTwo(pointMap.get("two") != null ? pointMap.get("two") : 0 );
-        monthlyPoints.setThree(pointMap.get("three") != null ? pointMap.get("three") : 0 );
+        monthlyPoints.setMonthOne(pointMap.get("monthOne") != null ? pointMap.get("monthOne") : 0 );
+        monthlyPoints.setMonthTwo(pointMap.get("monthTwo") != null ? pointMap.get("monthTwo") : 0 );
+        monthlyPoints.setMonthThree(pointMap.get("monthThree") != null ? pointMap.get("monthThree") : 0 );
         return monthlyPoints;
     }
 
     public String calculateTotalPoints(MonthlyPoints monthlyPoints){
-        return Integer.valueOf(monthlyPoints.getOne()+monthlyPoints.getTwo()+monthlyPoints.getThree()).toString();
+        return Integer.valueOf(monthlyPoints.getMonthOne()+monthlyPoints.getMonthTwo()+monthlyPoints.getMonthThree()).toString();
     }
 
     public Integer calculatePoints(Integer transAmount){

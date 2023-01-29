@@ -32,7 +32,7 @@
           "200": {
             "description": "200 response!",
             "examples": {
-              "application/json": "{\"customerId\":\"1001\",\"customerName\":\"John\",\"totalPoints\":\"110\",\"monthlyPoints\":{\"monthOne\":70,\"monthTwo\":0,\"monthThree\":40},\"errors\":null}"
+              "application/json": "{\"customerId\":\"1001\",\"customerName\":\"John\",\"totalPoints\":\"110\",\"monthlyPoints\":{\"one\":70,\"two\":0,\"three\":40},\"errors\":null}"
             }
           },
           "400": {
