@@ -4,23 +4,23 @@ data:
  "customerId": "1001",
  "customerName": "John",
  "transactions": [{
-                    "month": "one",
+                    "month": "monthOne",
                     "transactionAmount": "110"
                   },
                   {
-                    "month": "one",
+                    "month": "monthOne",
                     "transactionAmount": "40"
                   },
                   {
-                    "month": "two",
+                    "month": "monthTwo",
                     "transactionAmount": "10"
                   },
                   {
-                    "month": "three",
+                    "month": "monthThree",
                     "transactionAmount": "90"
                   },
                   {
-                    "month": "three",
+                    "month": "monthThree",
                     "transactionAmount": "50"
                   }
  ]
@@ -28,15 +28,15 @@ data:
   "customerId": "1002",
   "customerName": "David",
   "transactions": [{
-                     "month": "one",
+                     "month": "monthOne",
                      "transactionAmount": "190"
                    },
                    {
-                     "month": "one",
+                     "month": "monthOne",
                      "transactionAmount": "40"
                    },
                    {
-                     "month": "two",
+                     "month": "monthTwo",
                      "transactionAmount": "130"
                    }
   ]
@@ -44,15 +44,15 @@ data:
   "customerId": "1003",
   "customerName": "Ramesh",
   "transactions": [{
-                     "month": "one",
+                     "month": "monthOne",
                      "transactionAmount": "120"
                    },
                    {
-                     "month": "two",
+                     "month": "monthTwo",
                      "transactionAmount": "110"
                    },
                    {
-                     "month": "three",
+                     "month": "monthThree",
                      "transactionAmount": "60"
                    }
   ]

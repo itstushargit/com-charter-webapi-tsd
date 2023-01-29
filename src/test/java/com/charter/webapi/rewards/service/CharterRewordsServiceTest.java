@@ -36,23 +36,23 @@ class CharterRewordsServiceTest {
             " \"customerId\": \"1001\",\n" +
             " \"customerName\": \"John\",\n" +
             " \"transactions\": [{\n" +
-            "                    \"month\": \"one\",\n" +
+            "                    \"month\": \"monthOne\",\n" +
             "                    \"transactionAmount\": \"110\"\n" +
             "                  },\n" +
             "                  {\n" +
-            "                    \"month\": \"one\",\n" +
+            "                    \"month\": \"monthOne\",\n" +
             "                    \"transactionAmount\": \"40\"\n" +
             "                  },\n" +
             "                  {\n" +
-            "                    \"month\": \"two\",\n" +
+            "                    \"month\": \"monthTwo\",\n" +
             "                    \"transactionAmount\": \"10\"\n" +
             "                  },\n" +
             "                  {\n" +
-            "                    \"month\": \"three\",\n" +
+            "                    \"month\": \"monthThree\",\n" +
             "                    \"transactionAmount\": \"90\"\n" +
             "                  },\n" +
             "                  {\n" +
-            "                    \"month\": \"three\",\n" +
+            "                    \"month\": \"monthThree\",\n" +
             "                    \"transactionAmount\": \"50\"\n" +
             "                  }\n" +
             " ]\n" +
@@ -60,15 +60,15 @@ class CharterRewordsServiceTest {
             "  \"customerId\": \"1002\",\n" +
             "  \"customerName\": \"David\",\n" +
             "  \"transactions\": [{\n" +
-            "                     \"month\": \"one\",\n" +
+            "                     \"month\": \"monthOne\",\n" +
             "                     \"transactionAmount\": \"190\"\n" +
             "                   },\n" +
             "                   {\n" +
-            "                     \"month\": \"one\",\n" +
+            "                     \"month\": \"monthOne\",\n" +
             "                     \"transactionAmount\": \"40\"\n" +
             "                   },\n" +
             "                   {\n" +
-            "                     \"month\": \"two\",\n" +
+            "                     \"month\": \"monthTwo\",\n" +
             "                     \"transactionAmount\": \"130\"\n" +
             "                   }\n" +
             "  ]\n" +
@@ -76,15 +76,15 @@ class CharterRewordsServiceTest {
             "  \"customerId\": \"1003\",\n" +
             "  \"customerName\": \"Ramesh\",\n" +
             "  \"transactions\": [{\n" +
-            "                     \"month\": \"one\",\n" +
+            "                     \"month\": \"monthOne\",\n" +
             "                     \"transactionAmount\": \"120\"\n" +
             "                   },\n" +
             "                   {\n" +
-            "                     \"month\": \"two\",\n" +
+            "                     \"month\": \"monthTwo\",\n" +
             "                     \"transactionAmount\": \"110\"\n" +
             "                   },\n" +
             "                   {\n" +
-            "                     \"month\": \"three\",\n" +
+            "                     \"month\": \"monthThree\",\n" +
             "                     \"transactionAmount\": \"60\"\n" +
             "                   }\n" +
             "  ]\n" +
