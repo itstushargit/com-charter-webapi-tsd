@@ -19,8 +19,10 @@ For building and running the application you need:
 
 There are several ways to run a Spring Boot application on your local machine. 
 
-One way is to run the Docker image by running the below command.
-`docker run -d -p 8080:8080 docker.io/library/com-charter-webapi-tsd`
+One way is to run the Docker image by running the below commands.
+`docker pull subhratdas/tushardhub:com-charter-webapi-tsd`
+
+`docker run -d -p 8080:8080 subhratdas/tushardhub:com-charter-webapi-tsd`
 
 Another way is to execute the `main` method in the `com.charter.webapi.rewards.ComCharterWebapiTsdApplication` class from your IDE.
 
